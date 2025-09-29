@@ -3,7 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>أمنة حسن - محللة بيانات ومصممة رقمية</title>
+    <title>أمنة حسن للخدمات الرقمية - حلول رقمية احترافية</title>
+    <meta name="description" content="أمنة حسن للخدمات الرقمية تقدم خدمات رقمية احترافية تشمل التحليل الإحصائي باستخدام SPSS وPython، كتابة السير الذاتية المتوافقة مع ATS، تصميم المواقع، تطوير التطبيقات، وإعداد الاستبيانات." />
+    <meta name="keywords" content="أمنة حسن للخدمات الرقمية, تحليل إحصائي, تحليل احصائي, تحليل البيانات, تحليل استبيانات, تحليل SPSS, SPSS, spss, أمنة حسن لتحليل البيانات, تحليل بحوث تخرج, تحليل بحث ماجستير, تحليل بحث, مكتبة تحليل احصائي, مكتبة احصاء, عمل احصاء, amna hassan, محلل احصائي, كتابة سير ذاتية, تصميم مواقع, تطوير تطبيقات, استبيانات, Python, خدمات رقمية, تحليل بيانات احترافي, استشارات احصائية, اسعار تحليل احصائي مناسبة, تحليل علمي دقيق, تحليل بيانات أكاديمية, باحثين ماجستير ودكتوراه, دعم علمي متكامل, نتائج دقيقة, افضل محلل احصائي, خبرة في SPSS, خبرة Python, تحليل استبيان شامل, دراسات ميدانية, باحث محترف, دراسة جدوى, دراسات علمية, سعر مناسب,عمل احصاء ,تحليل احصائي كامل,أمنة حسن " />
+    <meta name="author" content="أمنة حسن" />
+    <meta name="contact" content="واتساب: +249129124340, البريد الإلكتروني: amna.hassan@example.com" />
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="أمنة حسن للخدمات الرقمية - حلول رقمية احترافية" />
+    <meta property="og:description" content="خدمات رقمية شاملة تشمل التحليل الإحصائي، كتابة السير الذاتية، تصميم المواقع، وتطوير التطبيقات." />
+    <meta property="og:image" content="https://i.postimg.cc/R0Yfsmks/favicon.png" />
+    <meta property="og:url" content="https://amna-hassan.com" />
+    <meta property="og:type" content="website" />
+    
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="أمنة حسن للخدمات الرقمية - حلول رقمية احترافية" />
+    <meta name="twitter:description" content="خدمات رقمية شاملة تشمل التحليل الإحصائي، كتابة السير الذاتية، تصميم المواقع، وتطوير التطبيقات." />
+    <meta name="twitter:image" content="https://i.postimg.cc/R0Yfsmks/favicon.png" />
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="https://i.postimg.cc/R0Yfsmks/favicon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="https://i.postimg.cc/R0Yfsmks/favicon.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="https://i.postimg.cc/R0Yfsmks/favicon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
     
     <!-- Material Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -19,6 +42,9 @@
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <style>
         :root {
             /* Feminine Color Palette */
@@ -135,6 +161,23 @@
         .btn:active::after {
             width: 300px;
             height: 300px;
+        }
+
+        .btn-loading::after {
+            content: '';
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid #ffffff;
+            border-radius: 50%;
+            border-top-color: transparent;
+            animation: spin 1s linear infinite;
+            margin-left: 0.5rem;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
         }
 
         /* Navigation */
@@ -583,6 +626,54 @@
             transform: scale(1.2);
         }
 
+        .review-form-container {
+            background: var(--background);
+            padding: 40px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-md);
+            margin-top: 40px;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-label {
+            color: var(--primary-color);
+            font-size: 1.6rem;
+            font-weight: 600;
+            margin-bottom: 0.8rem;
+            display: block;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            background: #f8f9fa;
+            font-size: 16px;
+            transition: var(--transition);
+        }
+
+        .form-control:focus {
+            border-color: var(--primary-light);
+            box-shadow: 0 0 0 4px rgba(233,30,99,0.1);
+            outline: none;
+            background-color: white;
+        }
+
+        .form-control:disabled {
+            background-color: #e9ecef;
+            cursor: not-allowed;
+            opacity: 0.7;
+        }
+
+        textarea.form-control {
+            resize: vertical;
+            min-height: 120px;
+        }
+
         /* Contact Section */
         .contact {
             padding: 80px 20px;
@@ -627,38 +718,6 @@
             padding: 40px;
             border-radius: var(--border-radius);
             box-shadow: var(--shadow-md);
-        }
-
-        .form-group {
-            margin-bottom: 25px;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: 500;
-            color: var(--text-primary);
-        }
-
-        .form-control {
-            width: 100%;
-            padding: 12px 15px;
-            border: 2px solid transparent;
-            border-radius: 8px;
-            background: var(--background);
-            font-size: 16px;
-            transition: var(--transition);
-        }
-
-        .form-control:focus {
-            outline: none;
-            border-color: var(--primary-light);
-            box-shadow: 0 0 0 4px rgba(233,30,99,0.1);
-        }
-
-        textarea.form-control {
-            resize: vertical;
-            min-height: 120px;
         }
 
         /* WhatsApp Float Button */
@@ -838,14 +897,14 @@
         <div class="nav-container">
             <div class="logo">
                 <i class="fas fa-sparkles"></i>
-                أمنة حسن
+                أمنة حسن للخدمات الرقمية
             </div>
             <ul class="nav-menu" id="navMenu">
                 <li><a href="#home" class="nav-link">الرئيسية</a></li>
-                <li><a href="#services" class="nav-link">الخدمات</a></li>
-                <li><a href="#about" class="nav-link">من أنا</a></li>
+                <li><a href="#about" class="nav-link">من نحن</a></li>
+                <li><a href="#services" class="nav-link">خدماتنا</a></li>
                 <li><a href="#reviews" class="nav-link">آراء العملاء</a></li>
-                <li><a href="#contact" class="nav-link">تواصل معي</a></li>
+                <li><a href="https://wa.me/249129124340" class="nav-link btn btn-primary">تواصل معنا <i class="fab fa-whatsapp"></i></a></li>
             </ul>
             <button class="menu-toggle" id="menuToggle">
                 <i class="fas fa-bars"></i>
@@ -870,96 +929,18 @@
     </div>
 
     <!-- WhatsApp Float Button -->
-    <a href="https://wa.me/201234567890" class="whatsapp-float" target="_blank">
+    <a href="https://wa.me/249129124340" class="whatsapp-float" target="_blank">
         <i class="fab fa-whatsapp"></i>
     </a>
 
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="hero-content">
-            <h1 class="hero-title">أمنة حسن</h1>
-            <p class="hero-subtitle">محللة بيانات | مصممة رقمية | كاتبة محتوى</p>
+            <h1 class="hero-title">أمنة حسن للخدمات الرقمية</h1>
+            <p class="hero-subtitle"><span class="typing-text"></span></p>
             <div class="hero-buttons">
-                <a href="#services" class="btn btn-primary">
-                    <i class="fas fa-briefcase"></i>
-                    استكشف خدماتي
-                </a>
-                <a href="#contact" class="btn btn-secondary">
-                    <i class="fas fa-envelope"></i>
-                    تواصل معي
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section class="services" id="services">
-        <h2 class="section-title">خدماتي المميزة</h2>
-        <p class="section-subtitle">أقدم حلولاً رقمية متكاملة تلبي احتياجاتك</p>
-        
-        <div class="services-grid">
-            <div class="service-card">
-                <div class="service-icon">
-                    <i class="fas fa-chart-line"></i>
-                </div>
-                <h3 class="service-title">التحليل الإحصائي</h3>
-                <p class="service-description">تحليل البيانات باستخدام أحدث الأدوات والتقنيات للحصول على رؤى قيمة</p>
-            </div>
-
-            <div class="service-card">
-                <div class="service-icon">
-                    <i class="fas fa-file-alt"></i>
-                </div>
-                <h3 class="service-title">كتابة السير الذاتية</h3>
-                <p class="service-description">إعداد سير ذاتية احترافية تبرز مهاراتك وخبراتك بشكل مميز</p>
-            </div>
-
-            <div class="service-card">
-                <div class="service-icon">
-                    <i class="fas fa-palette"></i>
-                </div>
-                <h3 class="service-title">تصميم الهوية البصرية</h3>
-                <p class="service-description">إنشاء هوية بصرية متكاملة تعكس قيم علامتك التجارية</p>
-            </div>
-
-            <div class="service-card">
-                <div class="service-icon">
-                    <i class="fas fa-laptop-code"></i>
-                </div>
-                <h3 class="service-title">تصميم المواقع</h3>
-                <p class="service-description">تطوير مواقع ويب عصرية وسريعة الاستجابة</p>
-            </div>
-
-            <div class="service-card">
-                <div class="service-icon">
-                    <i class="fas fa-mobile-alt"></i>
-                </div>
-                <h3 class="service-title">تطوير التطبيقات</h3>
-                <p class="service-description">بناء تطبيقات مبتكرة للأجهزة المحمولة</p>
-            </div>
-
-            <div class="service-card">
-                <div class="service-icon">
-                    <i class="fas fa-poll"></i>
-                </div>
-                <h3 class="service-title">إعداد الاستبيانات</h3>
-                <p class="service-description">تصميم استبيانات فعالة لجمع البيانات وتحليلها</p>
-            </div>
-
-            <div class="service-card">
-                <div class="service-icon">
-                    <i class="fas fa-pen-fancy"></i>
-                </div>
-                <h3 class="service-title">كتابة المحتوى</h3>
-                <p class="service-description">إنشاء محتوى جذاب ومؤثر يحقق أهدافك</p>
-            </div>
-
-            <div class="service-card">
-                <div class="service-icon">
-                    <i class="fas fa-database"></i>
-                </div>
-                <h3 class="service-title">تحليل البيانات</h3>
-                <p class="service-description">استخراج رؤى قيمة من بياناتك لاتخاذ قرارات مدروسة</p>
+                <a href="https://wa.me/249129124340" class="btn btn-primary"><i class="fab fa-whatsapp"></i> اطلب الآن</a>
+                <a href="#services" class="btn btn-secondary"><i class="fas fa-eye"></i> استكشف الخدمات</a>
             </div>
         </div>
     </section>
@@ -969,18 +950,16 @@
         <div class="about-container">
             <div class="about-image">
                 <div class="about-image-wrapper">
-                    <div style="background: var(--gradient-1); height: 400px; border-radius: var(--border-radius); display: flex; align-items: center; justify-content: center;">
-                        <i class="fas fa-user-circle" style="font-size: 100px; color: white;"></i>
-                    </div>
+                    <img src="https://images.unsplash.com/photo-1516321310762-479437144403?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="صورة عن أمنة حسن" />
                 </div>
             </div>
             <div class="about-content">
-                <h2 class="section-title">من أنا</h2>
+                <h2 class="section-title">من نحن</h2>
                 <p class="about-text">
-                    مرحباً! أنا أمنة حسن، محترفة في مجال الخدمات الرقمية. أتمتع بخبرة واسعة في تحليل البيانات وتصميم الحلول الرقمية المبتكرة. شغفي هو مساعدة العملاء على تحقيق أهدافهم من خلال تقديم خدمات عالية الجودة تجمع بين الإبداع والاحترافية.
+                    في <span style="color: var(--primary-color); font-weight: 600;">أمنة حسن للخدمات الرقمية</span>، نقدم خدمات رقمية شاملة تشمل التحليل الإحصائي باستخدام SPSS و Python، كتابة السير الذاتية المتوافقة مع ATS، تصميم المواقع، تطوير تطبيقات الأندرويد وiOS، إعداد الاستبيانات، وكتابة المحتوى. هدفنا هو تقديم حلول مبتكرة بجودة عالية.
                 </p>
                 <p class="about-text">
-                    أؤمن بأن النجاح يأتي من الاهتمام بالتفاصيل والتفاني في تقديم أفضل ما لدي. هدفي هو بناء علاقات طويلة الأمد مع العملاء من خلال تقديم حلول تتجاوز توقعاتهم.
+                    نتميز بدقة العمل وسرعة التنفيذ، مع الحفاظ على أعلى معايير الجودة. فريقنا من المحترفين يضمن لك الحصول على نتائج متميزة تلبي توقعاتك وتتجاوزها.
                 </p>
                 <div class="stats">
                     <div class="stat-item">
@@ -1004,6 +983,62 @@
         </div>
     </section>
 
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <h2 class="section-title">خدماتنا</h2>
+        <p class="section-subtitle">نقدم مجموعة متكاملة من الخدمات الرقمية الاحترافية لتلبية جميع احتياجاتك</p>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-chart-bar"></i></div>
+                <h3 class="service-title">التحليل الإحصائي</h3>
+                <p class="service-description">نقدم خدمات تحليل بيانات متقدم باستخدام أحدث الأدوات مثل SPSS، Python، وR. سواء كنت بحاجة إلى تحليل بيانات لبحث أكاديمي أو دراسة تسويقية، فريقنا يضمن لك نتائج دقيقة وواضحة مع تفسير مفصل للنتائج.</p>
+                <a href="https://wa.me/249129124340" class="btn btn-primary"><i class="fab fa-whatsapp"></i> اطلب الخدمة</a>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-file-alt"></i></div>
+                <h3 class="service-title">كتابة السير الذاتية</h3>
+                <p class="service-description">إعداد سير ذاتية احترافية متوافقة مع نظام ATS لتلبية متطلبات سوق العمل. نضمن لك سيرة ذاتية جذابة تبرز مهاراتك وخبراتك بشكل احترافي، مما يزيد من فرصتك في الحصول على الوظيفة التي تطمح إليها.</p>
+                <a href="https://wa.me/249129124340" class="btn btn-primary"><i class="fab fa-whatsapp"></i> اطلب الخدمة</a>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-palette"></i></div>
+                <h3 class="service-title">تصميم الهوية البصرية</h3>
+                <p class="service-description">إنشاء هوية بصرية متكاملة تعكس قيم علامتك التجارية.</p>
+                <a href="https://wa.me/249129124340" class="btn btn-primary"><i class="fab fa-whatsapp"></i> اطلب الخدمة</a>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
+                <h3 class="service-title">تصميم المواقع</h3>
+                <p class="service-description">ننشئ مواقع إلكترونية حديثة وجذابة تتناسب مع احتياجات عملائنا. سواء كنت بحاجة إلى موقع شخصي، متجر إلكتروني، أو موقع شركة، نضمن لك تصميمًا عصريًا وسريعًا وسهل الاستخدام مع تحسين لمحركات البحث.</p>
+                <a href="https://wa.me/249129124340" class="btn btn-primary"><i class="fab fa-whatsapp"></i> اطلب الخدمة</a>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
+                <h3 class="service-title">تطوير التطبيقات</h3>
+                <p class="service-description">بناء تطبيقات مبتكرة للأجهزة المحمولة تلبي احتياجات المستخدمين.</p>
+                <a href="https://wa.me/249129124340" class="btn btn-primary"><i class="fab fa-whatsapp"></i> اطلب الخدمة</a>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-poll"></i></div>
+                <h3 class="service-title">إعداد الاستبيانات</h3>
+                <p class="service-description">تصميم استبيانات فعالة لجمع البيانات وتحليلها بدقة.</p>
+                <a href="https://wa.me/249129124340" class="btn btn-primary"><i class="fab fa-whatsapp"></i> اطلب الخدمة</a>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-pen-fancy"></i></div>
+                <h3 class="service-title">كتابة المحتوى</h3>
+                <p class="service-description">إنشاء محتوى جذاب ومؤثر يحقق أهدافك التسويقية.</p>
+                <a href="https://wa.me/249129124340" class="btn btn-primary"><i class="fab fa-whatsapp"></i> اطلب الخدمة</a>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-database"></i></div>
+                <h3 class="service-title">تحليل البيانات</h3>
+                <p class="service-description">استخراج رؤى قيمة من بياناتك لاتخاذ قرارات مدروسة.</p>
+                <a href="https://wa.me/249129124340" class="btn btn-primary"><i class="fab fa-whatsapp"></i> اطلب الخدمة</a>
+            </div>
+        </div>
+    </section>
+
     <!-- Reviews Section -->
     <section class="reviews" id="reviews">
         <div class="reviews-container">
@@ -1012,114 +1047,43 @@
             
             <!-- Swiper -->
             <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="review-card">
-                            <div class="review-stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <p class="review-text">
-                                "أمنة قدمت لي تحليل إحصائي ممتاز لبحث الماجستير، كانت محترفة جداً وسريعة في التنفيذ. أنصح بالتعامل معها بشدة!"
-                            </p>
-                            <div class="review-author">
-                                <div class="author-avatar">س</div>
-                                <div class="author-info">
-                                    <h4>سارة محمد</h4>
-                                    <p>باحثة ماجستير</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="review-card">
-                            <div class="review-stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
-                            <p class="review-text">
-                                "السيرة الذاتية التي أعدتها لي أمنة كانت رائعة! حصلت على عدة عروض عمل بعد استخدامها. شكراً جزيلاً!"
-                            </p>
-                            <div class="review-author">
-                                <div class="author-avatar">أ</div>
-                                <div class="author-info">
-                                    <h4>أحمد خالد</h4>
-                                    <p>مهندس برمجيات</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="review-card">
-                            <div class="review-stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <p class="review-text">
-                                "تصميم الموقع كان رائعاً ومبتكراً. أمنة تفهمت احتياجاتي تماماً وأنتجت موقعاً يتجاوز توقعاتي!"
-                            </p>
-                            <div class="review-author">
-                                <div class="author-avatar">ف</div>
-                                <div class="author-info">
-                                    <h4>فاطمة علي</h4>
-                                    <p>صاحبة متجر إلكتروني</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="review-card">
-                            <div class="review-stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <p class="review-text">
-                                "المحتوى الذي كتبته أمنة لموقعي ساعد في زيادة الزيارات والمبيعات بشكل ملحوظ. محترفة جداً!"
-                            </p>
-                            <div class="review-author">
-                                <div class="author-avatar">م</div>
-                                <div class="author-info">
-                                    <h4>مريم أحمد</h4>
-                                    <p>مديرة تسويق</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="review-card">
-                            <div class="review-stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
-                            <p class="review-text">
-                                "التطبيق الذي طورته أمنة سهل الاستخدام ومميز في التصميم. العملاء أعجبوا به كثيراً!"
-                            </p>
-                            <div class="review-author">
-                                <div class="author-avatar">خ</div>
-                                <div class="author-info">
-                                    <h4>خالد وليد</h4>
-                                    <p>رائد أعمال</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="swiper-wrapper" id="reviewsContainer">
+                    <!-- Reviews will be loaded here dynamically -->
                 </div>
                 <div class="swiper-pagination"></div>
+            </div>
+
+            <div class="review-form-container">
+                <h3 class="section-title">أضف رأيك</h3>
+                <form id="reviewForm" class="contact-form">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="reviewName" class="form-label">اسمك</label>
+                                <input type="text" class="form-control" id="reviewName" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="reviewRating" class="form-label">التقييم</label>
+                                <select class="form-control" id="reviewRating" required>
+                                    <option value="5">★★★★★</option>
+                                    <option value="4">★★★★</option>
+                                    <option value="3">★★★</option>
+                                    <option value="2">★★</option>
+                                    <option value="1">★</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="reviewText" class="form-label">رأيك</label>
+                        <textarea class="form-control" id="reviewText" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">
+                        إرسال الرأي <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
             </div>
         </div>
     </section>
@@ -1127,24 +1091,22 @@
     <!-- Contact Section -->
     <section class="contact" id="contact">
         <div class="contact-container">
-            <h2 class="section-title">تواصل معي</h2>
+            <h2 class="section-title">تواصل معنا</h2>
             <p class="section-subtitle">دعنا نعمل معاً لتحقيق أهدافك</p>
-            
             <div class="contact-info">
                 <div class="contact-item">
                     <i class="fas fa-envelope"></i>
-                    <span>amna.hassan@email.com</span>
+                    <span>amna.hassan@example.com</span>
                 </div>
                 <div class="contact-item">
                     <i class="fas fa-phone"></i>
-                    <span dir="ltr">+20 123 456 7890</span>
+                    <span dir="ltr">+249129124340</span>
                 </div>
                 <div class="contact-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span>القاهرة، مصر</span>
+                    <i class="fab fa-whatsapp"></i>
+                    <span dir="ltr"><a href="https://wa.me/249129124340">+249129124340</a></span>
                 </div>
             </div>
-
             <form class="contact-form">
                 <div class="form-group">
                     <label for="name">الاسم</label>
@@ -1158,10 +1120,7 @@
                     <label for="message">الرسالة</label>
                     <textarea id="message" class="form-control" required></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary" style="width: 100%;">
-                    <i class="fas fa-paper-plane"></i>
-                    إرسال الرسالة
-                </button>
+                <button type="submit" class="btn btn-primary" style="width: 100%;"><i class="fas fa-paper-plane"></i> إرسال الرسالة</button>
             </form>
         </div>
     </section>
@@ -1169,51 +1128,26 @@
     <!-- Footer -->
     <footer>
         <div class="social-links">
-            <a href="#" class="social-link">
-                <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="#" class="social-link">
-                <i class="fab fa-twitter"></i>
-            </a>
-            <a href="#" class="social-link">
-                <i class="fab fa-linkedin-in"></i>
-            </a>
-            <a href="#" class="social-link">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="#" class="social-link">
-                <i class="fab fa-whatsapp"></i>
-            </a>
+            <a href="https://facebook.com/amna.hassan" class="social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://wa.me/249129124340" class="social-link"><i class="fab fa-whatsapp"></i></a>
+            <a href="mailto:amna.hassan@example.com" class="social-link"><i class="fas fa-envelope"></i></a>
         </div>
-        <p>&copy; 2024 أمنة حسن - جميع الحقوق محفوظة</p>
-        <p>صُمم بكل حب 💖</p>
+        <p>&copy; <span id="year"></span> أمنة حسن للخدمات الرقمية - جميع الحقوق محفوظة</p>
+        <p>Developed by <a href="https://eltaieb-mohammed.com" target="_blank" style="color: inherit;">Eltaieb Mohammed</a></p>
     </footer>
 
-    <!-- Swiper JS -->
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
+    
     <script>
-        // Initialize Swiper
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 1,
-            spaceBetween: 30,
-            loop: true,
-            autoplay: {
-                delay: 5000,
-                disableOnInteraction: false,
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            breakpoints: {
-                768: {
-                    slidesPerView: 2,
-                },
-                1024: {
-                    slidesPerView: 3,
-                },
-            },
+        // Initialize AOS Animation
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
         });
 
         // Navigation scroll effect
@@ -1229,17 +1163,11 @@
         // Mobile menu toggle
         const menuToggle = document.getElementById('menuToggle');
         const navMenu = document.getElementById('navMenu');
-
         menuToggle.addEventListener('click', function() {
             navMenu.classList.toggle('active');
             const icon = this.querySelector('i');
-            if (navMenu.classList.contains('active')) {
-                icon.classList.remove('fa-bars');
-                icon.classList.add('fa-times');
-            } else {
-                icon.classList.remove('fa-times');
-                icon.classList.add('fa-bars');
-            }
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-times');
         });
 
         // Close menu when clicking on a link
@@ -1253,13 +1181,199 @@
             });
         });
 
-        // Form submission
-        const contactForm = document.querySelector('.contact-form');
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('شكراً لك! سيتم الرد على رسالتك في أقرب وقت ممكن.');
-            this.reset();
+        // Typing animation
+        new Typed('.typing-text', {
+            strings: [
+                'حلول رقمية احترافية',
+                'تحليل إحصائي دقيق',
+                'تصميم مواقع وتطبيقات',
+                'كتابة سير ذاتية احترافية'
+            ],
+            typeSpeed: 50,
+            backSpeed: 30,
+            loop: true
         });
+
+        // JSONBin.io Settings - نفس الـ Bin المستخدم في موقع الطيب محمد
+        const BIN_ID = '6871c8b96063391d31abd20f';
+        const API_KEY = '$2a$10$utDWMvXOSPFPF7xyKR28xeHrERvHujDoNPfl.gI4VWrMPk9j2pjmq';
+        const API_URL = `https://api.jsonbin.io/v3/b/${BIN_ID}`;
+
+        // DOM Elements for Reviews
+        const reviewForm = document.getElementById('reviewForm');
+        const reviewsContainer = document.getElementById('reviewsContainer');
+
+        // Initialize Swiper
+        let swiper;
+        function initSwiper() {
+            swiper = new Swiper(".mySwiper", {
+                loop: true,
+                slidesPerView: 1,
+                spaceBetween: 20,
+                centeredSlides: true,
+                grabCursor: true,
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: true,
+                    pauseOnMouseEnter: true
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                speed: 800,
+                effect: 'slide',
+                breakpoints: {
+                    768: {
+                        slidesPerView: 1,
+                        spaceBetween: 20,
+                    },
+                    992: {
+                        slidesPerView: 2,
+                        spaceBetween: 30,
+                    },
+                    1200: {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                    }
+                }
+            });
+        }
+
+        // Load Reviews on Page Load
+        document.addEventListener('DOMContentLoaded', () => {
+            loadReviews();
+            initSwiper();
+        });
+
+        // Submit New Review - نفس نظام موقع الطيب محمد
+        reviewForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const submitButton = reviewForm.querySelector('button[type="submit"]');
+            const inputs = reviewForm.querySelectorAll('input, select, textarea');
+            
+            // Disable form inputs and show loading - نفس نظام موقع الطيب محمد
+            inputs.forEach(input => input.disabled = true);
+            submitButton.disabled = true;
+            submitButton.classList.add('btn-loading');
+            submitButton.innerHTML = 'جاري الإرسال...';
+            
+            const name = document.getElementById('reviewName').value;
+            const rating = parseInt(document.getElementById('reviewRating').value);
+            const text = document.getElementById('reviewText').value;
+            
+            try {
+                // Fetch current data
+                const response = await fetch(API_URL, {
+                    headers: {
+                        'X-Master-Key': API_KEY
+                    }
+                });
+                const data = await response.json();
+                let reviews = data.record?.reviews || [];
+                
+                // Add new review
+                reviews.unshift({
+                    id: Date.now(),
+                    name,
+                    rating,
+                    text,
+                    date: new Date().toLocaleDateString('ar-SA')
+                });
+                
+                // Update data on server
+                await fetch(API_URL, {
+                    method: 'PUT',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'X-Master-Key': API_KEY
+                    },
+                    body: JSON.stringify({ reviews })
+                });
+                
+                // Reload reviews
+                await loadReviews();
+                
+                // Show success message and reset form
+                alert('شكراً لك! تم إرسال رأيك بنجاح.');
+                
+                // Reset form and re-enable inputs
+                reviewForm.reset();
+                inputs.forEach(input => input.disabled = false);
+                submitButton.disabled = false;
+                submitButton.classList.remove('btn-loading');
+                submitButton.innerHTML = 'إرسال الرأي <i class="fas fa-paper-plane"></i>';
+            } catch (error) {
+                console.error('Error:', error);
+                alert('حدث خطأ أثناء إرسال رأيك. يرجى المحاولة مرة أخرى.');
+                
+                // Re-enable inputs even on error
+                inputs.forEach(input => input.disabled = false);
+                submitButton.disabled = false;
+                submitButton.classList.remove('btn-loading');
+                submitButton.innerHTML = 'إرسال الرأي <i class="fas fa-paper-plane"></i>';
+            }
+        });
+
+        // Display Reviews in Testimonials - نفس نظام موقع الطيب محمد
+        async function loadReviews() {
+            try {
+                const response = await fetch(API_URL, {
+                    headers: {
+                        'X-Master-Key': API_KEY
+                    }
+                });
+                const data = await response.json();
+                const reviews = data.record?.reviews || [];
+                
+                let html = '';
+                reviews.forEach(review => {
+                    const stars = '<i class="fas fa-star"></i>'.repeat(review.rating) + 
+                                 (review.rating < 5 ? '<i class="far fa-star"></i>'.repeat(5 - review.rating) : '');
+                    html += `
+                        <div class="swiper-slide">
+                            <div class="review-card">
+                                <div class="review-stars">${stars}</div>
+                                <p class="review-text">"${review.text}"</p>
+                                <div class="review-author">
+                                    <div class="author-avatar">${review.name.charAt(0)}</div>
+                                    <div class="author-info">
+                                        <h4>${review.name}</h4>
+                                        <p>${review.date}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                });
+                
+                reviewsContainer.innerHTML = html || '<div class="swiper-slide"><div class="review-card"><p class="text-center">لا توجد آراء متاحة حالياً</p></div></div>';
+                
+                // Reinitialize Swiper after updating content
+                if (swiper) {
+                    swiper.destroy(true, true);
+                }
+                initSwiper();
+            } catch (error) {
+                console.error('Error loading reviews:', error);
+                reviewsContainer.innerHTML = '<div class="swiper-slide"><div class="review-card"><p class="text-center">حدث خطأ أثناء تحميل آراء العملاء</p></div></div>';
+                if (swiper) {
+                    swiper.destroy(true, true);
+                }
+                initSwiper();
+            }
+        }
+
+        // Contact form submission (placeholder)
+        document.querySelector('.contact-form').addEventListener('submit', e => {
+            e.preventDefault();
+            alert('شكرًا! تم إرسال رسالتك بنجاح.');
+            e.target.reset();
+        });
+
+        // Set current year
+        document.getElementById('year').textContent = new Date().getFullYear();
     </script>
 </body>
 </html>
